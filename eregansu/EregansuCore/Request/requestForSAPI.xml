@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a>::requestForSAPI()</refname>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>Request</type> <methodname>requestForSAPI</methodname>(
+			<methodparam><type>string</type> <modifier>[in,optional]</modifier> <parameter>$sapi</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in,optional]</modifier> <parameter>$sapi</parameter></term>
+				<listitem>
+					<para>The name of the SAPI to return an instance for</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>Request</type></term>
+				<listitem>
+					<para>An instance of a request class</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para>Return an instance of a Request class for a specified SAPI.</para>
+			<para>Requests are encapsulated as one of several descendants of the <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>
+class, depending upon the SAPI in use.</para>
+			<para>If no SAPI name is specified when calling <methodname>requestForSAPI</methodname>, the current
+SAPI name as identified by PHP (using <function>php_sapi_name</function>) will be used.
+Additionally, if <constant>REQUEST_CLASS</constant> is defined and no SAPI name is specified, an instance
+of the class named by <constant>REQUEST_CLASS</constant> will be created instead of the default for the
+current SAPI.</para>
+	</refsection>
+</refentry>

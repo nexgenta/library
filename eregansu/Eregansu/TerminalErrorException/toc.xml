@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/templates/library/toc.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">
+	<rdf:Description>
+		<dc:title><html:a target="_parent" href="./">Overview</html:a></dc:title>
+	</rdf:Description>
+</rdf:RDF>

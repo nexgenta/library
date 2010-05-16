@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a>::generate()</refname>
+		<refpurpose>Generate a new UUID</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>generate</methodname>(
+			<methodparam><type>int</type> <modifier>[in,optional]</modifier> <parameter>$kind</parameter></methodparam>, 
+			<methodparam><type>string</type> <modifier>[in,optional]</modifier> <parameter>$namespace</parameter></methodparam>, 
+			<methodparam><type>string</type> <modifier>[in,optional]</modifier> <parameter>$name</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>int</type> <modifier>[in,optional]</modifier> <parameter>$kind</parameter></term>
+				<listitem>
+					<para>The kind of UUID to generate.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in,optional]</modifier> <parameter>$namespace</parameter></term>
+				<listitem>
+					<para>For MD5 (v3) and SHA1 (v5) UUIDs, the namespace which contains <parameter>$name</parameter>.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in,optional]</modifier> <parameter>$name</parameter></term>
+				<listitem>
+					<para>For MD5 (v3) and SHA1 (v5) UUIDs, the identifier used to generate the UUID.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>A new UUID, or <constant>null</constant> if an error occurs.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/generate.html">generate</html:a></methodname> generates a new UUID according to <html:a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</html:a> (equivalent to
+ITU-T Rec. X.667, ISO/IEC 9834-8:2005).</para>
+			<para>If the kind of UUID specified by <parameter>$kind</parameter> cannot be generated
+because it is not supported, a random (v4) UUID will be generated instead (in other
+words, the <parameter>$kind</parameter> parameter is a hint).</para>
+			<para>If the kind of UUID specified by <parameter>$kind</parameter> cannot be generated
+because one or both of <parameter>$namespace</parameter> and <parameter>$name</parameter>
+are not valid, an error occurs and <constant>null</constant> is returned.</para>
+	</refsection>
+</refentry>

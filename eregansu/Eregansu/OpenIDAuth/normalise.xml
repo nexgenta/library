@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/Eregansu/OpenIDAuth/">OpenIDAuth</html:a>::normalise()</refname>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>protected</modifier>
+			<type>void</type> <methodname>normalise</methodname>(
+		)</methodsynopsis>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Return value</title>
+			<para>None.</para>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para>Taken from the Zend Framework</para>
+			<para>Normalizes OpenID identifier that can be URL or XRI name.
+Returns the ID on success and false of failure.</para>
+			<para>Normalization is performed according to the following rules:
+1. If the user's input starts with one of the "xri://", "xri://$ip*",
+or "xri://$dns*" prefixes, they MUST be stripped off, so that XRIs
+are used in the canonical form, and URI-authority XRIs are further
+considered URL identifiers.
+2. If the first character of the resulting string is an XRI Global
+Context Symbol ("=", "@", "+", "$", "!"), then the input SHOULD be
+treated as an XRI.
+3. Otherwise, the input SHOULD be treated as an http URL; if it does
+not include a "http" or "https" scheme, the Identifier MUST be
+prefixed with the string "http://".
+4. URL identifiers MUST then be further normalized by both following
+redirects when retrieving their content and finally applying the
+rules in Section 6 of [RFC3986] to the final destination URL.</para>
+	</refsection>
+</refentry>

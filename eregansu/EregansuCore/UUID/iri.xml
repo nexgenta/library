@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a>::iri()</refname>
+		<refpurpose>Formats a UUID as an IRI</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>iri</methodname>(
+			<methodparam><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></term>
+				<listitem>
+					<para>A string representation of a UUID</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>The IRI representation of <parameter>$uuid</parameter>, or <constant>null</constant> if <parameter>$uuid</parameter> is not a valid UUID string.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/iri.html">iri</html:a></methodname> converts a string representation of a UUID to an IRI
+(Internationalized Resource Identifier), specifically a UUID URN.</para>
+			<para>For example, the null UUID converted to an IRI would be <literal>urn:uuid:00000000-0000-0000-0000-000000000000</literal>.</para>
+	</refsection>
+</refentry>

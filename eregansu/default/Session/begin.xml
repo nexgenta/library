@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/default/Session/">Session</html:a>::begin()</refname>
+		<refpurpose>Open the session data, so that changes can be made to it</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public</modifier>
+			<type>void</type> <methodname>begin</methodname>(
+		)</methodsynopsis>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Return value</title>
+			<para>None.</para>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para>Session::begin() prepares the session data for modifications. Once the
+modifications have been completed, you should call Session::commit().</para>
+			<para>Session::begin() and Session::commit() are re-entrant: provided every
+call to Session::begin() has a matching call to Session::commit(), all
+except the outermost calls to Session::begin() and Session::commit() will
+have no effect.</para>
+	</refsection>
+</refentry>

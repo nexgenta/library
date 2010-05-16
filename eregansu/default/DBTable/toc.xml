@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/templates/library/toc.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">
+	<rdf:Description>
+		<dc:title><html:a target="_parent" href="./">Overview</html:a></dc:title>
+	</rdf:Description>
+	<rdf:Description about="#constants"><dc:title>Constants</dc:title></rdf:Description>
+	<rdf:Seq id="constants">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="EXISTING" href="EXISTING.html">EXISTING</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="CREATE_NEVER" href="CREATE_NEVER.html">CREATE_NEVER</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="CREATE_IF_NEEDED" href="CREATE_IF_NEEDED.html">CREATE_IF_NEEDED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="CREATE_ALWAYS" href="CREATE_ALWAYS.html">CREATE_ALWAYS</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-properties"><dc:title>Instance Properties</dc:title></rdf:Description>
+	<rdf:Seq id="instance-properties">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-schema" href="-schema.html">$schema</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-name" href="-name.html">$name</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-options" href="-options.html">$options</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-columns" href="-columns.html">$columns</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-indices" href="-indices.html">$indices</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-changes" href="-changes.html">$changes</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-nativeCreateOptions" href="-nativeCreateOptions.html">$nativeCreateOptions</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-methods"><dc:title>Instance Methods</dc:title></rdf:Description>
+	<rdf:Seq id="instance-methods">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="__construct" href="__construct.html">__construct</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="apply" href="apply.html">apply</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="column" href="column.html">column</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="columns" href="columns.html">columns</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="columnWithSpec" href="columnWithSpec.html">columnWithSpec</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="indexWithSpec" href="indexWithSpec.html">indexWithSpec</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="indices" href="indices.html">indices</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="dropIndex" href="dropIndex.html">dropIndex</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="retrieve" href="retrieve.html">retrieve</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="nativeColumnSpec" href="nativeColumnSpec.html">nativeColumnSpec</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="nativeIndexSpec" href="nativeIndexSpec.html">nativeIndexSpec</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="replaceColumn" href="replaceColumn.html">replaceColumn</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="addColumn" href="addColumn.html">addColumn</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="addIndex" href="addIndex.html">addIndex</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="createTable" href="createTable.html">createTable</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="applyChanges" href="applyChanges.html">applyChanges</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="nativeCreateOptions" href="nativeCreateOptions.html">nativeCreateOptions</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+</rdf:RDF>

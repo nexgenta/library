@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/templates/library/toc.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">
+	<rdf:Description>
+		<dc:title><html:a target="_parent" href="./">Overview</html:a></dc:title>
+	</rdf:Description>
+	<rdf:Description about="#constants"><dc:title>Constants</dc:title></rdf:Description>
+	<rdf:Seq id="constants">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="BAD_REQUEST" href="BAD_REQUEST.html">BAD_REQUEST</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="AUTHORIZATION_REQUIRED" href="AUTHORIZATION_REQUIRED.html">AUTHORIZATION_REQUIRED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="PAYMENT_REQUIRED" href="PAYMENT_REQUIRED.html">PAYMENT_REQUIRED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="FORBIDDEN" href="FORBIDDEN.html">FORBIDDEN</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="OBJECT_NOT_FOUND" href="OBJECT_NOT_FOUND.html">OBJECT_NOT_FOUND</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="ROUTE_NOT_MATCHED" href="ROUTE_NOT_MATCHED.html">ROUTE_NOT_MATCHED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="NO_OBJECT" href="NO_OBJECT.html">NO_OBJECT</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="METHOD_NOT_ALLOWED" href="METHOD_NOT_ALLOWED.html">METHOD_NOT_ALLOWED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="TYPE_NOT_SUPPORTED" href="TYPE_NOT_SUPPORTED.html">TYPE_NOT_SUPPORTED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="PROXY_AUTHENTICATION_REQUIRED" href="PROXY_AUTHENTICATION_REQUIRED.html">PROXY_AUTHENTICATION_REQUIRED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="REQUEST_TIMEOUT" href="REQUEST_TIMEOUT.html">REQUEST_TIMEOUT</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="CONFLICT" href="CONFLICT.html">CONFLICT</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="GONE" href="GONE.html">GONE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="LENGTH_REQUIRED" href="LENGTH_REQUIRED.html">LENGTH_REQUIRED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="PRECONDITION_FAILED" href="PRECONDITION_FAILED.html">PRECONDITION_FAILED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="REQUEST_TOO_LARGE" href="REQUEST_TOO_LARGE.html">REQUEST_TOO_LARGE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="URI_TOO_LONG" href="URI_TOO_LONG.html">URI_TOO_LONG</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="UNSUPPORTED_MEDIA_TYPE" href="UNSUPPORTED_MEDIA_TYPE.html">UNSUPPORTED_MEDIA_TYPE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="RANGE_NOT_SATISFIABLE" href="RANGE_NOT_SATISFIABLE.html">RANGE_NOT_SATISFIABLE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="EXPECTATION_FAILED" href="EXPECTATION_FAILED.html">EXPECTATION_FAILED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="INTERNAL" href="INTERNAL.html">INTERNAL</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="NOT_IMPLEMENTED" href="NOT_IMPLEMENTED.html">NOT_IMPLEMENTED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="METHOD_NOT_IMPLEMENTED" href="METHOD_NOT_IMPLEMENTED.html">METHOD_NOT_IMPLEMENTED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="BAD_GATEWAY" href="BAD_GATEWAY.html">BAD_GATEWAY</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="SERVICE_UNAVAILABLE" href="SERVICE_UNAVAILABLE.html">SERVICE_UNAVAILABLE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="ROUTE_NOT_PROCESSOR" href="ROUTE_NOT_PROCESSOR.html">ROUTE_NOT_PROCESSOR</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="GATEWAY_TIMEOUT" href="GATEWAY_TIMEOUT.html">GATEWAY_TIMEOUT</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="HTTP_VERSION_NOT_SUPPORTED" href="HTTP_VERSION_NOT_SUPPORTED.html">HTTP_VERSION_NOT_SUPPORTED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="VARIANT_ALSO_NEGOTIATES" href="VARIANT_ALSO_NEGOTIATES.html">VARIANT_ALSO_NEGOTIATES</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="INSUFFICIENT_STORAGE" href="INSUFFICIENT_STORAGE.html">INSUFFICIENT_STORAGE</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="BANDWIDTH_LIMIT_EXCEEDED" href="BANDWIDTH_LIMIT_EXCEEDED.html">BANDWIDTH_LIMIT_EXCEEDED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="NOT_EXTENDED" href="NOT_EXTENDED.html">NOT_EXTENDED</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#class-properties"><dc:title>Class Properties</dc:title></rdf:Description>
+	<rdf:Seq id="class-properties">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-throw" href="-throw.html">$throw</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-titles" href="-titles.html">$titles</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-descriptions" href="-descriptions.html">$descriptions</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-properties"><dc:title>Instance Properties</dc:title></rdf:Description>
+	<rdf:Seq id="instance-properties">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-status" href="-status.html">$status</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-detail" href="-detail.html">$detail</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-object" href="-object.html">$object</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-methods"><dc:title>Instance Methods</dc:title></rdf:Description>
+	<rdf:Seq id="instance-methods">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="__construct" href="__construct.html">__construct</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="process" href="process.html">process</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="errorTemplate" href="errorTemplate.html">errorTemplate</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="debugInfo" href="debugInfo.html">debugInfo</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="statusTitle" href="statusTitle.html">statusTitle</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="statusDescription" href="statusDescription.html">statusDescription</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+</rdf:RDF>

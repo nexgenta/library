@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/Base32/">Base32</html:a>::encode()</refname>
+		<refpurpose>Encode an integer as base-32</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>encode</methodname>(
+			<methodparam><type>int</type> <modifier>[in]</modifier> <parameter>$input</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>int</type> <modifier>[in]</modifier> <parameter>$input</parameter></term>
+				<listitem>
+					<para>The number to encode</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>A string containing <parameter>$input</parameter> encoded as base-32</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para>Encodes an integer as a base-32 value, that is, a value where each digit
+has 32 possible values (0-9, a-x).</para>
+	</refsection>
+</refentry>

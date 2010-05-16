@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/templates/library/toc.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">
+	<rdf:Description>
+		<dc:title><html:a target="_parent" href="./">Overview</html:a></dc:title>
+	</rdf:Description>
+	<rdf:Description about="#instance-properties"><dc:title>Instance Properties</dc:title></rdf:Description>
+	<rdf:Seq id="instance-properties">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-skin" href="-skin.html">$skin</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-templateName" href="-templateName.html">$templateName</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-loginForm" href="-loginForm.html">$loginForm</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-supportedMethods" href="-supportedMethods.html">$supportedMethods</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-loginKinds" href="-loginKinds.html">$loginKinds</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-kind" href="-kind.html">$kind</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-defaultSchemes" href="-defaultSchemes.html">$defaultSchemes</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-methods"><dc:title>Instance Methods</dc:title></rdf:Description>
+	<rdf:Seq id="instance-methods">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="__construct" href="__construct.html">__construct</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="getObject" href="getObject.html">getObject</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="assignTemplate" href="assignTemplate.html">assignTemplate</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="redirect" href="redirect.html">redirect</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="performSubmission" href="performSubmission.html">performSubmission</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="setIdentity" href="setIdentity.html">setIdentity</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="getForms" href="getForms.html">getForms</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="loginForm" href="loginForm.html">loginForm</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+</rdf:RDF>

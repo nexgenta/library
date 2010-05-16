@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<articleinfo>
+		<title>UUID Class Reference</title>
+		<copyright>
+			<year>2010</year>
+			<holder>Mo McRoberts</holder>
+		</copyright>
+	</articleinfo>
+	<section role="availability">
+		<variablelist>
+			<varlistentry>
+				<term>Framework</term>
+				<listitem><para><ulink url="../">Eregansu Core Library</ulink> (<package role="framework"><ulink url="../"><html:a target="_parent" href="/library/eregansu/EregansuCore/">EregansuCore</html:a></ulink></package>)</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Availability</term>
+				<listitem><para>Available in Eregansu 1.0 and later.</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Usage</term>
+				<listitem><para><literal>uses('uuid');</literal></para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Source</term>
+				<listitem><para><filename><ulink url="http://github.com/nexgenta/eregansu/blob/master/lib/uuid.php">lib/uuid.php</ulink></filename></para></listitem>
+			</varlistentry>
+		</variablelist>
+	</section>
+	<section>
+		<title>Overview</title>
+			<para>The <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname> class contains facilities for generating and manipulating
+Universally Unique Identifiers (UUIDs), according to
+<html:a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</html:a> (equivalent to
+ITU-T Rec. X.667, ISO/IEC 9834-8:2005).</para>
+			<para><note>Instances of the UUID class are never created; all methods are static.</note></para>
+	</section>
+	<section>
+		<title>Tasks</title>
+		<section>
+			<title>Generating UUIDs</title>
+		</section>
+		<section>
+			<title>Manipulating UUIDs</title>
+		</section>
+	</section>
+</article>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a>::canonical()</refname>
+		<refpurpose>Return the canonical form of a UUID string (i.e., no braces, no dashes, all lower-case)</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>canonical</methodname>(
+			<methodparam><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></term>
+				<listitem>
+					<para>A string representation of a UUID.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>The canonical form of the UUID, or <constant>null</constant> if <parameter>$uuid</parameter> is not a valid UUID string.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/canonical.html">canonical</html:a></methodname> accepts a string representation of a UUID (for example, as returned by
+<classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/generate.html">generate</html:a></methodname>) and returns the canonical form of the UUID: that is, all-lowercase, and with
+any braces and dashes removed.</para>
+			<para>For example, the canonical form of the UUID string <literal>{EAE58635-B826-42A9-9B03-3A3AC8A2CC29}</literal>
+would be <literal>eae58635b82642a99b033a3ac8a2cc29'</literal>.</para>
+	</refsection>
+</refentry>

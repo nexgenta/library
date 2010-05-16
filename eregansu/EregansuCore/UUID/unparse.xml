@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a>::unparse()</refname>
+		<refpurpose>Constructs a UUID string given an array as returned by UUID::parse()</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>unparse</methodname>(
+			<methodparam><type>array</type> <modifier>[in]</modifier> <parameter>$info</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>array</type> <modifier>[in]</modifier> <parameter>$info</parameter></term>
+				<listitem>
+					<para>An array representation of a UUID</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>A string representing the supplied UUID</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/unparse.html">unparse</html:a></methodname> accepts an array representation of a UUID as returned by
+<classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/parse.html">parse</html:a></methodname> and returns a string representation of the same UUID.</para>
+	</refsection>
+</refentry>

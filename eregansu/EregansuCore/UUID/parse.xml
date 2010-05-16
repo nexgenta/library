@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a>::parse()</refname>
+		<refpurpose>Parse a string containing a UUID and return an array representing its value.</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>array</type> <methodname>parse</methodname>(
+			<methodparam><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in]</modifier> <parameter>$uuid</parameter></term>
+				<listitem>
+					<para>A string representation of a UUID.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>array</type></term>
+				<listitem>
+					<para>An array representing the supplied UUID, or <constant>null</constant> if an error occurs.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/parse.html">parse</html:a></methodname> converts a string representation of a UUID to an array. The
+array contains the following members:</para>
+			<para>- <varname>time_low</varname>
+- <varname>time_mid</varname>
+- <varname>time_hi_and_version</varname>
+- <varname>clock_seq_hi_and_reserved</varname>
+- <varname>clock_seq_low</varname>
+- <varname>node</varname>
+- <varname>version</varname>
+- <varname>variant</varname></para>
+			<para>The <varname>version</varname> member contains a UUID version number, for example <constant><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/RANDOM.html">RANDOM</html:a></constant>.
+The <varname>variant</varname> member specifies the UUID variant, for example <constant><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/">UUID</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/UUID/DCE.html">DCE</html:a></constant>.</para>
+	</refsection>
+</refentry>

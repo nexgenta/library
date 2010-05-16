@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/default/Session/">Session</html:a>::sessionForRequest()</refname>
+		<refpurpose>Return a Session instance associated with a a given request</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>void</type> <methodname>sessionForRequest</methodname>(
+			<methodparam><type>Request</type> <modifier>[in]</modifier> <parameter>$request</parameter></methodparam>
+		)</methodsynopsis>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>Request</type> <modifier>[in]</modifier> <parameter>$request</parameter></term>
+				<listitem>
+					<para>The request which should be attached to the session</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+			<para>None.</para>
+	</refsection>
+</refentry>

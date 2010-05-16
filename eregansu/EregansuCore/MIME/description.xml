@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/">MIME</html:a>::description()</refname>
+		<refpurpose>Return a human-readable description of a MIME type</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>description</methodname>(
+			<methodparam><type>string</type> <modifier>[in]</modifier> <parameter>$type</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in]</modifier> <parameter>$type</parameter></term>
+				<listitem>
+					<para>The MIME type to obtain a description for</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>A human-readable description for <parameter>$type</parameter></para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/">MIME</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/description.html">description</html:a></methodname> returns a human-readable description of a specified
+MIME type.</para>
+			<para>For example, the description for <literal>video/mp4</literal> might be <literal>MPEG 4 video</literal>.</para>
+	</refsection>
+</refentry>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<articleinfo>
+		<title>Request Class Reference</title>
+		<copyright>
+			<year>2010</year>
+			<holder>Mo McRoberts</holder>
+		</copyright>
+	</articleinfo>
+	<section role="availability">
+		<variablelist>
+			<varlistentry>
+				<term>Framework</term>
+				<listitem><para><ulink url="../">Eregansu Core Library</ulink> (<package role="framework"><ulink url="../"><html:a target="_parent" href="/library/eregansu/EregansuCore/">EregansuCore</html:a></ulink></package>)</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Availability</term>
+				<listitem><para>Available in Eregansu 1.0 and later.</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Usage</term>
+				<listitem><para><literal>uses('request');</literal></para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Source</term>
+				<listitem><para><filename><ulink url="http://github.com/nexgenta/eregansu/blob/master/lib/request.php">lib/request.php</ulink></filename></para></listitem>
+			</varlistentry>
+		</variablelist>
+	</section>
+	<section>
+		<title>Overview</title>
+			<para>The Request class and its descendants represents a single request from a user
+agent of some kind. The <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname> class itself is abstract: descendants of <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>
+are used to represent the various different kinds of request which can be
+represented, depending upon the current SAPI. For example, an HTTP request
+from a web browser is represented as an instance of the <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/HTTPRequest/">HTTPRequest</html:a></classname> class.</para>
+			<para>Upon initialisation of the platform, a <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname> class instance is instantiated by
+calling <methodname>requestForSAPI</methodname> with no arguments, and the resulting instance is stored
+in the <varname>$request</varname> global variable.</para>
+	</section>
+</article>

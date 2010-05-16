@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<articleinfo>
+		<title>MIME Class Reference</title>
+		<copyright>
+			<year>2010</year>
+			<holder>Mo McRoberts</holder>
+		</copyright>
+	</articleinfo>
+	<section role="availability">
+		<variablelist>
+			<varlistentry>
+				<term>Framework</term>
+				<listitem><para><ulink url="../">Eregansu Core Library</ulink> (<package role="framework"><ulink url="../"><html:a target="_parent" href="/library/eregansu/EregansuCore/">EregansuCore</html:a></ulink></package>)</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Availability</term>
+				<listitem><para>Available in Eregansu 1.0 and later.</para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Usage</term>
+				<listitem><para><literal>uses('mime');</literal></para></listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Source</term>
+				<listitem><para><filename><ulink url="http://github.com/nexgenta/eregansu/blob/master/lib/mime.php">lib/mime.php</ulink></filename></para></listitem>
+			</varlistentry>
+		</variablelist>
+	</section>
+	<section>
+		<title>Overview</title>
+			<para>The <constant>MIME</constant> class provides facilities for mapping file extensions to
+MIME types and vice versa and obtaining human-readable descriptions
+from MIME types.</para>
+			<para><note>Instances of the <constant>MIME</constant> class are never created; all methods are static.</note></para>
+	</section>
+</article>

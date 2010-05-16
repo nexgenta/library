@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/templates/library/toc.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">
+	<rdf:Description>
+		<dc:title><html:a target="_parent" href="./">Overview</html:a></dc:title>
+	</rdf:Description>
+	<rdf:Description about="#instance-properties"><dc:title>Instance Properties</dc:title></rdf:Description>
+	<rdf:Seq id="instance-properties">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-rsClass" href="-rsClass.html">$rsClass</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-mysql" href="-mysql.html">$mysql</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-forceNewConnection" href="-forceNewConnection.html">$forceNewConnection</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="-dbms" href="-dbms.html">$dbms</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+	<rdf:Description about="#instance-methods"><dc:title>Instance Methods</dc:title></rdf:Description>
+	<rdf:Seq id="instance-methods">
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="__construct" href="__construct.html">__construct</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="autoconnect" href="autoconnect.html">autoconnect</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="selectDatabase" href="selectDatabase.html">selectDatabase</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="execute" href="execute.html">execute</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="raiseError" href="raiseError.html">raiseError</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="quoteRef" href="quoteRef.html">quoteRef</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="row" href="row.html">row</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="insertId" href="insertId.html">insertId</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="commit" href="commit.html">commit</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="now" href="now.html">now</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="rowCount" href="rowCount.html">rowCount</html:a></dc:title></rdf:Description>
+		</rdf:li>
+		<rdf:li>
+			<rdf:Description><dc:title><html:a target="_parent" id="quoteTable" href="quoteTable.html">quoteTable</html:a></dc:title></rdf:Description>
+		</rdf:li>
+	</rdf:Seq>
+</rdf:RDF>

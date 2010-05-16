@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/">MIME</html:a>::typeForExt()</refname>
+		<refpurpose>Return the MIME type matching a specified file extension</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public static</modifier>
+			<type>string</type> <methodname>typeForExt</methodname>(
+			<methodparam><type>string</type> <modifier>[in]</modifier> <parameter>$ext</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in]</modifier> <parameter>$ext</parameter></term>
+				<listitem>
+					<para>The file extension to resolve to a MIME type</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>The MIME type matching <parameter>$ext</parameter>, if it could be resolved, or <constant>null</constant> otherwise.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/">MIME</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/MIME/typeForExt.html">typeForExt</html:a></methodname> attempts to resolve a file extension to a MIME
+type.</para>
+			<para>The file extension, <parameter>$ext</parameter>, may be specified with or without a
+leading dot.</para>
+			<para>If the file extension could not be mapped to a MIME type, <constant>null</constant>
+is returned.</para>
+	</refsection>
+</refentry>

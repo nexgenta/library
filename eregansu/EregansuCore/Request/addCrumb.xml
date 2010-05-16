@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a>::addCrumb()</refname>
+		<refpurpose>Add an element to the breadcrumb array.</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public</modifier>
+			<type>void</type> <methodname>addCrumb</methodname>(
+			<methodparam><type>mixed</type> <modifier>[in]</modifier> <parameter>$info</parameter></methodparam>, 
+			<methodparam><type>string</type> <modifier>[in,optional]</modifier> <parameter>$key</parameter></methodparam>
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Parameters</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>mixed</type> <modifier>[in]</modifier> <parameter>$info</parameter></term>
+				<listitem>
+					<para>Either the name of the current page as should be presented to a user, or an array containing breadcrumb information.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term><type>string</type> <modifier>[in,optional]</modifier> <parameter>$key</parameter></term>
+				<listitem>
+					<para>An optional key which the breadcrumb information will be associated with.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Return value</title>
+			<para>None.</para>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/addCrumb.html">addCrumb</html:a></methodname> adds a new element to the breadcrumb array (<property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-crumb.html">$crumb</html:a></property>), optionally with an associated key.
+The <parameter>$info</parameter> parameter may be either the name of the current page or an array containing at
+least a <literal>name</literal> element. The <literal>link</literal> element of the array is used as the URI associated
+with this entry in the breadcrumb. If the <literal>link</literal> element is absent, or the <parameter>$info</parameter> parameter
+was a string, it is set to the value of the <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-pageUri.html">$pageUri</html:a></property> property.</para>
+			<para>If $key is specified, the breadcrumb information is associated with the given value. Subsequent
+calls to <methodname>addCrumb</methodname> specifying the same value for <parameter>$key</parameter> will overwrite the previously-specified
+information (preserving the original order).</para>
+			<para>If <parameter>$key</parameter> is not specified, a numeric key will be generated automatically.</para>
+	</refsection>
+</refentry>

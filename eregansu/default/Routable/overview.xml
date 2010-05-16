@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<articleinfo>
+		<title>Routable Class Reference</title>
+	</articleinfo>
+	<section role="availability">
+		<variablelist>
+			<varlistentry>
+				<term>Conforming to</term>
+				<listitem><para><interfacename><html:a target="_parent" href="/library/eregansu/Eregansu/IRequestProcessor/">IRequestProcessor</html:a></interfacename></para></listitem>
+			</varlistentry>
+		</variablelist>
+	</section>
+</article>

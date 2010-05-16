@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<?xml-stylesheet href="/templates/library/dbook.css" ?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:html="http://www.w3.org/1999/xhtml">
+	<refnamediv>
+		<refname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a>::consume()</refname>
+		<refpurpose>Consume the first request parameter as the name of a page.</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv role="php">
+		<methodsynopsis>
+			<modifier>public</modifier>
+			<type>string</type> <methodname>consume</methodname>(
+		)</methodsynopsis>
+			<para>Available in Eregansu 1.0 and later.</para>
+	</refsynopsisdiv>
+	<refsection>
+		<title>Return value</title>
+		<variablelist>
+			<varlistentry>
+				<term><type>string</type></term>
+				<listitem>
+					<para>The first request parameter, or <constant>null</constant> if <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-params.html">$params</html:a></property> is empty.</para>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	<refsection>
+		<title>Discussion</title>
+			<para>Moves the first parameter from <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-params.html">$params</html:a></property> to the <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-page.html">$page</html:a></property> array and
+returns it.</para>
+			<para>This has the effect of indicating that the first element of <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-params.html">$params</html:a></property> is the
+name of a page or matches some other kind of defined route.</para>
+			<para>For example, the <classname><html:a target="_parent" href="/library/eregansu/default/Router/">Router</html:a></classname> class will call <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/consume.html">consume</html:a></methodname> when the first element of
+<property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-params.html">$params</html:a></property> matches one of its routes and the <literal>adjustBase</literal> property of the
+route is unset or <constant>false</constant>.</para>
+			<para>As a result of calling <classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname><code>::</code><methodname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/consume.html">consume</html:a></methodname>, <property><classname><html:a target="_parent" href="/library/eregansu/EregansuCore/Request/">Request</html:a></classname>::<html:a target="_parent" href="/library/eregansu/EregansuCore/Request/-pageUri.html">$pageUri</html:a></property> will be updated
+accordingly.</para>
+	</refsection>
+</refentry>
