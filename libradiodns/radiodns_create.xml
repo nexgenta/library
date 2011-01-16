@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="/dbook.css" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">
+<refentry xmlns="http://docbook.org/ns/docbook" id="context_8c_a7319586be6d02140d854b78ce63b01c7_1a7319586be6d02140d854b78ce63b01c7">
+	<head xmlns="http://www.w3.org/1999/xhtml">
+		<title>radiodns_create</title>
+	</head>
+	<refmeta>
+		<refentrytitle>radiodns_create</refentrytitle>
+		<manvolnum>3</manvolnum>
+	</refmeta>
+	<refnamediv>
+		<refname>radiodns_create</refname>
+		<refpurpose>Create a new RadioDNS context.</refpurpose>
+	</refnamediv>
+	<refsynopsisdiv>
+		<funcsynopsis>
+			<funcprototype>
+				<funcdef>radiodns_t *<function>radiodns_create</function></funcdef>
+				<paramdef>const char *<parameter>domain</parameter></paramdef>
+			</funcprototype>
+		</funcsynopsis>
+	</refsynopsisdiv>
+	<refsection>
+		<title>DESCRIPTION</title>
+<para>The radiodns_create() function in particular creates a context using the specified DNS domain name, <computeroutput>domain</computeroutput>. This is contrast to the other functions in the family, such as radiodns_create_amss(), which instead use the supplied parameters to <emphasis>generate</emphasis> a domain name.</para>
+	</refsection>
+	<refsection>
+		<title>PARAMETERS</title>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DNS domain name to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+	</refsection>
+	<refsection>
+		<title>RETURN VALUE</title>
+<para>A newly-created RadioDNS context upon success, or NULL if an error occurs. </para>
+	</refsection>
+	<refsection>
+		<title>SEE ALSO</title>
+<para>radiodns_create_fm() </para><simplesectsep/><para>radiodns_create_dab_xpad() </para><simplesectsep/><para>radiodns_create_dab_sc() </para><simplesectsep/><para>radiodns_create_dab() </para><simplesectsep/><para>radiodns_create_drm() </para><simplesectsep/><para>radiodns_create_amss() </para><simplesectsep/><para>radiodns_create_hdradio() </para><simplesectsep/><para>radiodns_create_dvb() </para><simplesectsep/><para>radiodns_destroy() </para>
+	</refsection>
+</refentry>
