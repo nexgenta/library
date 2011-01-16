@@ -1,0 +1,3 @@
+[submodule "projects/libradiodns"]
+	path = projects/libradiodns
+	url = git://github.com/nexgenta/libradiodns.git
