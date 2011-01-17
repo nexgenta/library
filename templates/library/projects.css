@@ -1,0 +1,39 @@
+article {
+	padding-top: 11px;
+}
+body.sect-home #masthead {
+	position: relative;
+	font-size: 100%;
+	height: 300px;
+	background: #000 url('library.jpeg') 50% 50% no-repeat;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,100%);
+	margin: 0 1% 14px 1%;
+}
+body.sect-home h1 {
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	width: 381px;
+	height: 97px;
+	background: url('h1.png') 50% 50% no-repeat;
+}
+body.sect-home #global-nav {
+	right: 1%;
+	padding-right: 16px;
+}
+body.sect-home .project {
+	display: inline-block;
+	max-width: 30%;
+	margin: 0 1% 1em 1%;
+	vertical-align: top;
+	min-height: 6em;
+}
+.project p {
+	font-size: 85%;
+	margin-left: 0;
+}
+	
