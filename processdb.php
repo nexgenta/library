@@ -48,8 +48,37 @@ function processdir($indir, $outdir)
 			$db = new DocBookParser($indir . '/' . $de, '/');
 			if(!($db->output($outdir . '/' . $de)))
 			{
+				echo $db->rootNode . "\n";
+				if($db->rootNode == 'http://www.w3.org/1999/02/22-rdf-syntax-ns#RDF')
+				{
+					copy($indir . '/' . $de, $outdir . '/' . $de);
+					continue;
+				}
 				$r++;
+				continue;
 			}
+			$f = fopen($outdir . '/' . substr($de, 0, -4) . '.html', 'w');
+			fwrite($f, '<!DOCTYPE html>' . "\n");
+			fwrite($f, '<html>' . "\n");
+			fwrite($f, "\t" . '<head>' . "\n");
+			fwrite($f, "\t\t" . '<title>' . $db->title . '</title>' . "\n");
+			fwrite($f, "\t\t" . '<link rel="stylesheet" type="text/css" href="/doc.css">' . "\n");
+			fwrite($f, "\t" . '</head>' . "\n");
+			fwrite($f, "\t" . '<body>' . "\n");
+			fwrite($f, "\t\t" . '<div id="header">' . "\n");
+			fwrite($f, "\t\t\t" . '<h1>' . $db->title . '</h1>' . "\n");
+			fwrite($f, "\t\t" . '</div>' . "\n");
+			fwrite($f, "\t\t" . '<div id="container">' . "\n");
+			fwrite($f, "\t\t\t" . '<div id="toc">' . "\n");
+			fwrite($f, "\t\t\t\t" . '<iframe id="toc-frame" src="toc.xml"></iframe>' . "\n"); 
+			fwrite($f, "\t\t\t" . '</div>' . "\n");
+			fwrite($f, "\t\t\t" . '<div id="content">' . "\n");
+			fwrite($f, "\t\t\t\t" . '<iframe id="content-frame" src="' . $de . '"></iframe>' . "\n");
+			fwrite($f, "\t\t\t" . '</div>' . "\n");
+			fwrite($f, "\t\t" . '</div>' . "\n");
+			fwrite($f, "\t" . '</body>' . "\n");
+			fwrite($f, '</html>' . "\n");
+			fclose($f);
 		}
 	}
 	closedir($d);

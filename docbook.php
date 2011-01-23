@@ -14,7 +14,10 @@ class DocBookParser
 	protected $relPath;
 	protected $css;
 	protected $roots;
-							 
+
+	public $title;
+	public $rootNode;
+
 	public function __construct($filename, $depth = '', $relPath = '')
 	{
 		$this->filename = $filename;
@@ -26,16 +29,21 @@ class DocBookParser
 	
 	public function output($file)
 	{
+		$this->rootNode = null;
 		if(!($root = simplexml_load_file($this->filename)))
 		{
+			echo "Failed to load " . $this->filename . "\n";
+			print_r($root);
 			return false;
 		}
 		if(!($dom = dom_import_simplexml($root)))
 		{
+			echo "Import as DOM node failed\n";
 			return false;
 		}
 		if(!($out = fopen($file . '.tmp', 'w')))
 		{
+			echo "Failed to open $file.tmp\n";
 			return false;
 		}
 		if($this->processXML($root, $out))
@@ -53,6 +61,7 @@ class DocBookParser
 	{
 		$doc = new DOMDocument('1.0', 'UTF-8');
 		$doc->loadXML($root->asXML());
+		$this->rootNode = strval($doc->documentElement->namespaceURI) . strval($doc->documentElement->localName);
 		if($doc->documentElement->namespaceURI != self::NS_DOCBOOK)
 		{
 			echo "Error: Root node is not in the " . self::NS_DOCBOOK . " namespace\n";
@@ -72,30 +81,30 @@ class DocBookParser
 		}
 		$leader[] = '<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "http://www.oasis-open.org/docbook/xml/5.0/docbook.dtd">';
 		fwrite($out, implode("\n", $leader) . "\n");
-		$title = null;
+		$this->title = null;
 		switch($root->getName())
 		{
 			case 'article':
 				if($root->articleinfo && $root->articleinfo->title)
 				{
-					$title = trim(strval($root->articleinfo->title));
+					$this->title = trim(strval($root->articleinfo->title));
 				}
 				break;
 			case 'refentry':
 				if($root->refnamediv && $root->refnamediv->refname)
 				{
-					$title = trim(strval($root->refnamediv->refname));
+					$this->title = trim(strval($root->refnamediv->refname));
 				}
 				break;
 		}
-		if($title !== null)
+		if($this->title !== null)
 		{
 			$refChild = $doc->documentElement->firstChild;
 			/* Add some whitespace to ensure output is pleasantly-readable */
 			$doc->documentElement->insertBefore($doc->createTextNode("\n\t"), $refChild);
 			$head = $doc->createElementNS(self::NS_XHTML, 'head');
 			$head->appendChild($doc->createTextNode("\n\t\t"));
-			$head->appendChild($doc->createElementNS(self::NS_XHTML, 'title', $title));
+			$head->appendChild($doc->createElementNS(self::NS_XHTML, 'title', $this->title));
 			$head->appendChild($doc->createTextNode("\n\t"));
 			$doc->documentElement->insertBefore($head, $refChild);
 		}

@@ -44,20 +44,38 @@ foreach($namespaces as $k => $ns)
 {
 	if(!strlen($k)) continue;
 	echo "Writing package " . $ns['name'] . "\n";
+	$index = fopen($outbase . '/' . $ns['name'] . '/toc.xml', 'w');
+	fwrite($index, '<?xml version="1.0" encoding="UTF-8" ?>' . "\n" .
+		   '<?xml-stylesheet type="text/css" href="/toc.css" ?>' . "\n" .
+		   '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/1999/xhtml">' . "\n");
+	fwrite($index, "\t" . '<html:base target="content" />' . "\n");
+	fwrite($index, "\t" . '<rdf:Description>' . "\n");
+	fwrite($index, "\t\t" . '<dc:title><html:a href="index.xml">Introduction</html:a></dc:title>' . "\n");
+	fwrite($index, "\t" . '</rdf:Description>' . "\n");
+	
 	if(!file_exists($outbase . '/' . $ns['name']))
 	{
 		mkdir($outbase . '/' . $ns['name']);
 	}
 	if(isset($ns['functions']))
 	{
+		fwrite($index, "\t" . '<rdf:Description rdf:about="#functions">' . "\n");
+		fwrite($index, "\t\t" . '<dc:title>Function Reference</dc:title>' . "\n");
+		fwrite($index, "\t" . '</rdf:Description>' . "\n");
+
+		fwrite($index, "\t" . '<rdf:Seq xml:id="functions">' . "\n");
 		foreach($ns['functions'] as $id)
 		{
 			if(isset($functions[$id]))
 			{
+				fwrite($index, "\t\t" . '<rdf:li><rdf:Description><dc:title><html:a href="' . $functions[$id]['name'] . '.xml' . '">' . $functions[$id]['name'] . '</html:a></dc:title></rdf:Description></rdf:li>' . "\n");
 				write_function($ns, $functions[$id], $outbase);
 			}
 		}
+		fwrite($index, "\t" . '</rdf:Seq>' . "\n");
 	}
+	fwrite($index, '</rdf:RDF>' . "\n");
+	fclose($index);
 }
 
 exit(0);
